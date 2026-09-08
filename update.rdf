@@ -1,30 +1,21 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
-  <rdf:Description rdf:about="urn:mozilla:extension:zotero-ocr@bib.uni-mannheim.de">
-    <em:updates>
-      <rdf:Seq>
-        <rdf:li>
-          <rdf:Description>
-            <em:version>0.6.0</em:version>
-            <em:targetApplication>
-              <rdf:Description>
-                <em:id>zotero@chnm.gmu.edu</em:id>
-                <em:minVersion>5.0</em:minVersion>
-                <em:maxVersion>6.*</em:maxVersion>
-                <em:updateLink>https://github.com/UB-Mannheim/zotero-ocr/releases/download/0.6.0/zotero-ocr-0.6.0.xpi</em:updateLink>
-              </rdf:Description>
-            </em:targetApplication>
-            <em:targetApplication>
-              <rdf:Description>
-                <em:id>juris-m@juris-m.github.io</em:id>
-                <em:minVersion>5.0</em:minVersion>
-                <em:maxVersion>6.*</em:maxVersion>
-                <em:updateLink>https://github.com/UB-Mannheim/zotero-ocr/releases/download/0.6.0/zotero-ocr-0.6.0.xpi</em:updateLink>
-              </rdf:Description>
-            </em:targetApplication>
-          </rdf:Description>
-        </rdf:li>
-      </rdf:Seq>
-    </em:updates>
-  </rdf:Description>
-</rdf:RDF>
+{
+  "addons": {
+    "zotero-ocr@bib.uni-mannheim.de": {
+      "updates": [
+        {
+          "version": "0.9.6",
+          "update_link": "https://github.com/UB-Mannheim/zotero-ocr/releases/download/0.9.6/zotero-ocr-0.9.6.xpi",
+          "update_hash": "sha256:9362734df35f4d53a60c8ec63a4134a3579bbc223a5d97d8488eca6dc8c9e0bf",
+          "applications": {
+            "gecko": {
+              "strict_min_version": "60.0"
+            },
+            "zotero": {
+              "strict_min_version": "6.999"
+            }
+          }
+        }
+      ]
+    }
+  }
+}
